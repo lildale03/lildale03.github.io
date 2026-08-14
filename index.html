@@ -1,5 +1,219 @@
-<a class="app-card" href="/Banner-Generator/">
-  <h2>Banner Generator</h2>
-  <p>Design banners using my available letter inventory.</p>
-  <span>Open app →</span>
-</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <meta
+      name="description"
+      content="Dakota's app portfolio and project hub."
+    />
+
+    <meta name="theme-color" content="#0b0d12" />
+
+    <title>Dakota | Apps & Projects</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Main navigation">
+        <a class="brand" href="#home">
+          <span class="brand-mark">D</span>
+          <span>Dakota</span>
+        </a>
+
+        <button
+          id="menuButton"
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+
+        <div id="navLinks" class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#apps">My Apps</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero wrap">
+        <div>
+          <p class="kicker">I should put something here.</p>
+
+          <h1>
+            I make things that I find
+            <span class="gradient-text"> interesting. </span>
+          </h1>
+
+          <p class="hero-copy">
+            Hello, my name is Dakota. I work in IT, and I play a lot of video
+            games. I also like to create practical software to automate
+            repetitive tasks, improve workflows, and make systems easier to use.
+          </p>
+
+          <div class="actions">
+            <a class="button primary" href="#apps"> Explore my apps </a>
+
+            <a
+              class="button"
+              href="https://github.com/lildale03"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <img id="avatar" class="avatar" alt="Dakota's GitHub avatar" />
+
+          <h2 id="profileName">Dakota</h2>
+
+          <p id="profileBio">IT professional, builder, and problem solver.</p>
+
+          <div class="status">
+            <span class="status-dot"></span>
+
+            <span> The nightmares persist, but so do I. </span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section wrap">
+        <div class="section-heading">
+          <h2>About me</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <p>
+              I'm an IT professional with experience in enterprise support,
+              troubleshooting, process ownership, documentation, training, and
+              automation.
+            </p>
+
+            <p>
+              I tend to notice the repetitive or frustrating parts of a workflow
+              and then figure out a way to fix them. This site is where some of
+              those tools and experiments live.
+            </p>
+          </article>
+
+          <aside class="skill-card">
+            <p class="kicker">GOT A BIT OF KNOWLEDGE ON:</p>
+
+            <div class="skill-list">
+              <span class="skill">IT Support</span>
+              <span class="skill">Automation</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Power Platform</span>
+              <span class="skill">Process Improvement</span>
+              <span class="skill">Documentation</span>
+              <span class="skill">Leadership</span>
+              <span class="skill">CSS</span>
+              <span class="skill">HTML</span>
+              <span class="skill">React</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="apps" class="section wrap">
+        <div class="section-heading">
+          <h2>My Apps</h2>
+
+          <p>
+            These projects are pulled automatically from my public GitHub
+            repositories. Hover over a card to see its description and tags.
+            Click a card to open the app.
+          </p>
+        </div>
+
+        <div id="appsGrid" class="apps-grid" aria-live="polite">
+          <div class="message">
+            <span class="load-spinner"></span>
+            Loading apps from GitHub…
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section wrap">
+        <div class="section-heading">
+          <h2>Contact me</h2>
+
+          <p>
+            Want to talk about a project, an opportunity, or one of my apps? The
+            easiest place to reach me is through GitHub.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Find me online</h3>
+
+            <p>
+              See what I'm building, inspect the code, or open an issue on one
+              of my projects.
+            </p>
+
+            <div class="contact-links">
+              <a
+                class="contact-link"
+                href="https://github.com/lildale03"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>GitHub</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="contact-card">
+            <h3>Have feedback?</h3>
+
+            <p>
+              Each app has its own GitHub repository. Bug reports and feature
+              ideas can be submitted through that repository's Issues tab.
+            </p>
+
+            <div class="actions">
+              <a
+                class="button"
+                href="https://github.com/lildale03?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Browse repositories
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row wrap">
+        <span> © <span id="year"></span> Dakota </span>
+
+        <span> Built with HTML, CSS, JavaScript, and GitHub Pages. </span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
